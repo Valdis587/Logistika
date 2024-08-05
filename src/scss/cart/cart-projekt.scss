@@ -1,0 +1,94 @@
+.cart {
+    &__projekt {
+        position: relative;
+        z-index: 0;
+    }
+    &__projekt-img {
+        max-width: 100%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+    }
+    &__projekt-img::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+    }
+    &__projekt-info {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        background-color: $ColorWhite;
+        padding: 20px;
+        border-radius: 10px;
+       display: grid;
+       grid-template-rows: minmax(30px, auto) 20px;
+        row-gap: 10px;
+       width: 80%;
+       transform: translate(-50%, 200%);
+       visibility: hidden;
+       opacity: 0;
+       z-index: -100;
+       transition: all 0.3s ease-in-out;
+       @media(max-width: 800px) {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(-50%, 40%);
+        z-index: 100;
+       } 
+    } 
+        &__projekt-icon {
+            background-color: $ColorBlue;
+            color: $ColorWhite;
+            position: absolute;
+            top: -30px;
+            right: 10px;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 100%;
+            transform: rotate(-45deg);
+            transition: all 0.3s ease-in-out; 
+        }
+        &__projekt-icon:hover {
+            background-color: $ColorDarkBlue;
+        }
+        &__projekt-name {
+            @include funcAdaptiv(font-size, 16, 18);
+            font-weight: 700;
+            line-height: 110%;
+            margin: 5px 0;
+        }
+        &__projekt-price {
+            color: $ColorBlue;
+            line-height: 110%;
+            font-weight: 600;
+        }
+    
+        &__projekt:hover {
+            .cart__projekt-img {
+                img {
+                    transform: scale(1.08);
+                }
+            }
+        .cart__projekt-img::before, .cart__projekt-info {
+             visibility: visible;
+             opacity: 1;
+        }
+        .cart__projekt-info {
+            transform: translate(-50%, 40%);
+            z-index: 100;
+        }
+    
+     }
+}

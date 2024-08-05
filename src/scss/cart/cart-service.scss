@@ -1,0 +1,132 @@
+.cart {
+    
+    &__service {
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 100px;
+        z-index: 10;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    &__service-img {
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 3px;
+        img {
+            width: 100%;
+            height: 300px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &__service-img::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    &__service-info {
+        background-color: $ColorBlue; 
+        position: absolute;
+        top: auto;
+        bottom: -100px;
+        left: var(--space);
+        width: calc(100% - var(--space) * 2);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 0px;
+        padding: 20px 20px 22px 20px;
+        z-index: 2;
+        transition: all 0.3s ease-in-out;
+        display: grid;
+        grid-template-rows: minmax(40px, auto) 45px 15px 35px;
+        row-gap: 5px;
+        border: 1px solid $ColorBorder;
+        @media(max-width: 400px) {
+            left: var(--space2);
+            width: calc(100% - var(--space2) * 2);
+           }
+    }
+    &__service-icon {
+        position: absolute;
+        top: -15%;
+        left: 70%;
+        color: $ColorWhite;
+        background-color: $ColorBlue;
+        padding: 20px;
+        border-radius: 100%;
+        font-size: 20px;
+    }
+    &__service-info::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: $ColorWhite;
+        transition: all 0.3s ease-in-out; 
+    }
+
+    &__service:hover {
+        .cart__service-icon {
+            color: $ColorBlue;
+            background-color: $ColorWhite;
+           
+        }
+        .cart__service-info::before {    
+            height: 0;    
+    }
+    .cart__service-info {
+        color: $ColorWhite;
+        border: 1px solid $ColorBlue;
+        transition: all 0.3s ease-in-out; 
+    }
+    .btn-line {
+        color: $ColorWhite;
+        &::before {
+            background-color: $ColorWhite;
+        }
+    }
+    .cart__service-desc, .cart__service-title {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+    }
+
+    .cart__service-img {
+        &:before {
+            opacity: 1;
+            visibility: visible;
+            z-index: 1;
+        }
+      
+        img {
+            transform: scale(1.08);
+        }
+    }
+
+    }
+    &__service-title {
+        transition: all 0.3s ease-in-out; 
+        font-size: 20px;
+        line-height: 110%;
+        margin: 5px 0;
+        font-weight: 700;
+    }
+    &__service-price {
+        font-size: 18px;
+        line-height: 110%;
+    }
+    &__service-desc {
+        padding: 0 0 5px 0;
+        border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+    }
+    &__service-btn {
+        margin: 5px 0;
+        text-transform: uppercase;
+        color: $ColorBlue;
+    }
+}

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240805103424">
+   <title>Главная</title>
+</head>
+<body>
+   <div class="wrapper">
+   ﻿<div id="mini" class="popup">
+    <div class="popup__body popup__show">   
+        <div class="popup__content">
+          <button aria-label="popup close" class="popup__close"><i class="icon-plus"></i></button>
+             
+              <div class="popup__wrapper">
+                <div class="popup__img">
+                    <img src="images/pop.png" alt="">
+                </div>
+                <div class="popup__right">
+                    <h6 class="popup__title">Заказать звонок</h6>
+                <form action="#" class="form-site">
+                    <input type="text" class="form-site__input-name" placeholder="Ваш имя" >
+                    <input type="phone" class="form-site__input-tel" placeholder="Ваш телефон" >
+                    <input id="agreement" checked class="form-site__check" name="agreement" type="checkbox"  />
+                    <label class="form-site__check-label" for="agreement">Я даю согласие на обработку моих данных!</label>
+                    <button type="button" class="form-site__button btn-blue">Отправить</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end end popup--> 
+<div id="zak" class="popup-zak">
+    <div class="popup-zak__body popup__show">   
+        <div class="popup-zak__content">
+          <button aria-label="popup close" class="popup-zak__close"><i class="icon-plus"></i></button>
+              <div class="popup-zak__wrapper"> 
+                <h6 class="popup-zak__title">Заказать трактор МТЗ</h6>
+                <div class="popup-zak__content-form">
+                <div class="popup-zak__left">          
+                <div class="popup-zak__img">
+                    <img src="images/cat/2.png" alt="">
+                </div>
+            </div>
+            <div class="popup-zak__right">
+                <form action="#" class="form-site">
+                    <input type="text" class="form-site__input-name" placeholder="Ваш имя" >
+                    <input type="phone" class="form-site__input-tel" placeholder="Ваш телефон" >
+                    <input id="agreement" checked class="form-site__check" name="agreement" type="checkbox"  /> 
+                    <label class="form-site__check-label" for="agreement">Я даю согласие на обработку моих данных!</label>
+                    <button type="button" class="form-site__button btn-blue">Отправить</button>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div> 
+    </div>
+</div>
+<!--end end popup-->
+<!--<div class="preloader ">
+    <button class="th-btn style2 preloaderCls">Завершить загрузку</button>
+    <div class="preloader-inner">
+        <span class="loader"></span>
+    </div>
+</div>-->
+   <!-- Mouse cursor area start here -->
+   <div class="mouse-cursor cursor-outer"></div>
+   <div class="mouse-cursor cursor-inner"></div>
+   <!-- Mouse cursor area end here -->
+<header class="header">
+    <div class="header__top-line">
+        <div class="header__top-content container">
+            <div class="header__top-left">
+                <a href=""><i class="icon-phone-alt"></i>+1 (044) 123 456 789</a>
+                <a href=""><i class="icon-envelope"></i>info@insurax.com</a>
+            </div>
+            <div class="header__top-right">
+                <ul class="header__top-social social">
+                    <li><a aria-label="telegram" href=""><i class="icon-telegram-plane"></i></a></li>
+                    <li><a aria-label="skype" href=""><i class="icon-skype"></i></a></li>
+                    <li><a aria-label="viber" href=""><i class="icon-viber"></i></a></li>
+                    <li><a aria-label="vk" href=""><i class="icon-vk"></i></a></li>
+                    <li><a aria-label="whatsapp" href=""><i class="icon-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <button aria-label="menu" class="header__burger"><i class="icon-bars"></i></button>
+        </div>
+    </div>
+    <div class="header__bottom-line">
+        <div class="header__bottom-content container">
+            <div class="header__bottom-logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="header__bottom-center">
+                <div class="header__bottom-menu-wrapper">
+                    <nav class="header__menu-nav"> 
+                        <button aria-label="menu-close" class="header__menu-close"><i class="icon-plus"></i></button>
+                        <ul class="header__menu-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li class="menu-item-has-children"><a href="service.html">Услуги</a><i class="icon-angle-down"></i>
+                            <ul class="sub-menu">
+                                    <li><a href="404.html">Цены</a></li>
+                                    <li><a href="">Каталог</a></li>
+                                    <li><a href="">Проекты</a></li>
+                                    <li><a href="">Отзывы</a></li>
+                                </ul>
+                            </li>
+                           
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="projekt.html">Проекты</a></li> 
+                            <li class="menu-item-has-children"><a href="onas.html">О нас</a><i class="icon-angle-down"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="vakansii.html">Вакансии</a></li>
+                                    <li><a href="reviews.html">Отзывы</a></li>
+                                    <li><a href="contacts.html">Контакты</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__bottom-right">
+                <a id="popup" class="header__button btn-blue" href="javascript:void(0)">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="content-wrapper">
+   <section class="homeslider">
+    <div class="swiper homeslider__content">
+        <div class="swiper-wrapper homeslider__content-wrapp">
+            <div class="swiper-slide homeslider__content-item">
+                <div class="homeslider__content-img">
+                    <img src="images/slider/1.jpg" alt="">
+                </div>
+                <div class="homeslider__content-text-wrapp">
+                <div class="homeslider__content-text">
+                    <h1 class="homeslider__content-title">Аренда спецтехники и дорожно-строительной техники </h1>
+                    <h2 class="homeslider__content-desc">Собственный автопарк импортной спецтехники в СПб</h2>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide homeslider__content-item">
+                <div class="homeslider__content-img">
+                    <img src="images/slider/2.jpg" alt="">
+                </div>
+                <div class="homeslider__content-text-wrapp">
+                <div class="homeslider__content-text">
+                    <h1 class="homeslider__content-title">в Санкт-Петербурге и Ленинградской области </h1>
+                    <h2 class="homeslider__content-desc">Квалифицированные машинисты с большим стажем</h2>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<section class="categoryhome">
+    <div class="home-title-wrapper">
+    <h4 class="home-title">Категории</h4>
+    <p class="home-desc">Continually productize compelling quality for packed in business consulting elated productize</p>
+</div>
+    <div class="categoryhome__content-grid container">
+           <div class="categoryhome__item cart__border-color">
+            <a href=""><img src="images/cat/5.png" alt=""></a>
+            <a class="btn-line" href="">Бульдозеры</a>
+           </div>
+           <div class="categoryhome__item cart__border-color">
+            <a href=""><img src="images/cat/ora.png" alt=""></a>
+            <a class="btn-line" href="">Бульдозеры</a>
+           </div>
+           <div class="categoryhome__item cart__border-color">
+            <a href=""><img src="images/cat/2.png" alt=""></a>
+            <a class="btn-line" href="">Бульдозеры</a>
+           </div>
+           <div class="categoryhome__item cart__border-color">
+            <a href=""><img src="images/cat/22.png" alt=""></a>
+              <a class="btn-line" href="">Бульдозеры</a>
+           </div>
+           <div class="categoryhome__item cart__border-color">
+            <a href=""><img src="images/cat/2.png" alt=""></a>
+              <a class="btn-line" href="">Бульдозеры</a>
+           </div>
+           <div class="categoryhome__item cart__border-color">
+            <a href=""><img src="images/cat/2.png" alt=""></a>
+              <a class="btn-line" href="">Бульдозеры</a>
+           </div>
+           <div class="categoryhome__item cart__border-color">
+            <a href=""><img src="images/cat/2.png" alt=""></a>
+              <a class="btn-line" href="">Бульдозеры</a>
+           </div>
+    </div>
+</section>
+
+<section class="feuter">
+    <div class="home-title-wrapper container">
+        <h3 class="home-title">Преимущества</h3>
+        <p class="home-desc">Specialist logistics services</p>
+        </div>
+        <div class="feuter__content container">
+            <div class="feuter__item ">
+                <div class="feuter__img">
+                    <img src="images/u.svg" alt="">
+                </div>
+                <div class="feuter__text">
+                    <p class="feuter__title">Скорость</p>
+                    <p class="feuter__desc">Continually productize compelling quality for packed in business consulting elated productize</p>
+                </div>
+            </div>
+            <div class="feuter__item ">
+                <div class="feuter__img">
+                    <img src="images/u.svg" alt="">
+                </div>
+                <div class="feuter__text">
+                    <p class="feuter__title">Скорость</p>
+                    <p class="feuter__desc">Continually productize compelling quality for packed in business consulting elated productize</p>
+                </div>
+            </div>
+            <div class="feuter__item ">
+                <div class="feuter__img">
+                    <img src="images/u.svg" alt="">
+                </div>
+                <div class="feuter__text">
+                    <p class="feuter__title">Скорость</p>
+                    <p class="feuter__desc">Continually productize compelling quality for packed in business consulting elated productize</p>
+                </div>
+            </div>
+            <div class="feuter__item ">
+                <div class="feuter__img">
+                    <img src="images/u.svg" alt="">
+                </div>
+                <div class="feuter__text">
+                    <p class="feuter__title">Скорость</p>
+                    <p class="feuter__desc">Continually productize compelling quality for packed in business consulting elated productize</p>
+                </div>
+            </div>
+            <div class="feuter__item ">
+                <div class="feuter__img">
+                    <img src="images/u.svg" alt="">
+                </div>
+                <div class="feuter__text">
+                    <p class="feuter__title">Скорость</p>
+                    <p class="feuter__desc">Continually productize compelling quality for packed in business consulting elated productize</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+<section class="homecatalog">
+    <div class="home-title-wrapper container">
+    <h3 class="home-title">Каталог</h3>
+    <p class="home-desc">Specialist logistics services</p>
+    </div>
+    <div class="swiper homecatalog__content container">
+            <div class="swiper-wrapper homecatalog__content-wrapper">
+                <div class="swiper-slide cart__catalog cart__shadow">
+    <div class="cart__catalog-img">
+        <img src="images/cat/2.png" alt="">
+    </div>
+   
+    <div class="cart__catalog-info">
+        <a href="" class="cart__catalog-name btn-line">Трактор</a>
+        <div class="cart__catalog-spec-wrapp">
+            <p class="single__catalog-item"><span>Грузоподъемность:</span> 20000тонн </p>
+            <p class="single__catalog-item"><span>Цена:</span> 60000р. </p>
+        </div>
+        <div class="cart__catalog-button-wrapp">
+            <a id="popup" class="cart__catalog-button btn-blue" href="javascript:void(0)">Заказать</a>
+            <a class="cart__catalog-button btn-dark" href="single-catalog.html">Подробнее</a>
+        </div>
+    </div>
+</div>
+
+<div class="swiper-slide cart__catalog cart__shadow">
+    <div class="cart__catalog-img">
+        <img src="images/cat/22.png" alt="">
+    </div>
+  
+    <div class="cart__catalog-info">
+        <a href="" class="cart__catalog-name btn-line">Трактор</a>
+        <div class="cart__catalog-spec-wrapp">
+            <p class="single__catalog-item"><span>Грузоподъемность:</span> 20000тонн </p>
+            <p class="single__catalog-item"><span>Цена:</span> 60000р. </p>
+        </div>
+        <div class="cart__catalog-button-wrapp">
+            <a id="popup" class="cart__catalog-button btn-blue" href="javascript:void(0)">Заказать</a>
+            <a class="cart__catalog-button btn-dark" href="single-catalog.html">Подробнее</a>
+        </div>
+    </div>
+</div>
+
+<div class="swiper-slide cart__catalog cart__shadow">
+    <div class="cart__catalog-img">
+        <img src="images/cat/5.png" alt="">
+    </div>
+   
+    <div class="cart__catalog-info">
+        <a href="" class="cart__catalog-name btn-line">Трактор</a>
+        <div class="cart__catalog-spec-wrapp">
+            <p class="single__catalog-item"><span>Грузоподъемность:</span> 20000тонн </p>
+            <p class="single__catalog-item"><span>Цена:</span> 60000р. </p>
+        </div>
+        <div class="cart__catalog-button-wrapp">
+            <a id="popup" class="cart__catalog-button btn-blue" href="javascript:void(0)">Заказать</a>
+            <a class="cart__catalog-button btn-dark" href="single-catalog.html">Подробнее</a>
+        </div>
+    </div>
+</div>
+
+<div class="swiper-slide cart__catalog cart__shadow">
+    <div class="cart__catalog-img">
+        <img src="images/cat/5n.png" alt="">
+    </div>
+   
+    <div class="cart__catalog-info">
+        <a href="" class="cart__catalog-name btn-line">Трактор</a>
+        <div class="cart__catalog-spec-wrapp">
+            <p class="single__catalog-item"><span>Грузоподъемность:</span> 20000тонн </p>
+            <p class="single__catalog-item"><span>Цена:</span> 60000р. </p>
+        </div>
+        <div class="cart__catalog-button-wrapp">
+            <a id="popup" class="cart__catalog-button btn-blue" href="javascript:void(0)">Заказать</a>
+            <a class="cart__catalog-button btn-dark" href="single-catalog.html">Подробнее</a>
+        </div>
+    </div>
+</div>
+
+<div class="swiper-slide cart__catalog cart__shadow">
+    <div class="cart__catalog-img">
+        <img src="images/cat/on.png" alt="">
+    </div>
+   
+    <div class="cart__catalog-info">
+        <a href="" class="cart__catalog-name btn-line">Трактор</a>
+        <div class="cart__catalog-spec-wrapp">
+            <p class="single__catalog-item"><span>Грузоподъемность:</span> 20000тонн </p>
+            <p class="single__catalog-item"><span>Цена:</span> 60000р. </p>
+        </div>
+        <div class="cart__catalog-button-wrapp">
+            <a id="popup" class="cart__catalog-button btn-blue" href="javascript:void(0)">Заказать</a>
+            <a class="cart__catalog-button btn-dark" href="single-catalog.html">Подробнее</a>
+        </div>
+    </div>
+</div> 
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<section class="homeonas">
+    <div class="homeonas__content">
+    <div class="homeonas__item homeonas__img">
+        <img src="images/news/arenda.jpg" alt="">
+    </div>
+    <div class="homeonas__item homeonas__right">
+        <div class="home-title-wrapper container">
+            <h3 class="home-title">О нас</h3>
+            <h4 class="home-desc">Specialist logistics services</h4>
+            </div>
+            <div class="homeonas__text">
+                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                <a id="popup" class="homeonas__button btn-blue" href="javascript:void(0)">Заказать звонок</a>
+            </div>
+            
+    </div>
+</div>
+</section>
+
+<section class="homeprojekt">
+    <div class="home-title-wrapper container">
+    <h3 class="home-title">Проекты</h3>
+    <h4 class="home-desc">Specialist logistics services</h4>
+    </div>
+    <div class="swiper homeprojekt__content container">
+            <div class="swiper-wrapper homeprojekt__content-wrapper">
+                <div class="swiper-slide cart__projekt">
+    <div class="cart__projekt-img">
+        <img src="images/gallery/6.jpg" alt="">
+    </div>
+    <div class="cart__projekt-info">
+        <div class="cart__projekt-icon"><a href=""><i class="icon-arrow-right"></i></a></div>
+        <a href="" class="cart__projekt-name btn-line">Packaging & Distribution</a>
+        <p class="cart__projekt-price">44 000 руб.</p>
+    </div>
+</div>
+
+<div class="swiper-slide cart__projekt">
+    <div class="cart__projekt-img">
+        <img src="images/gallery/1.jpg" alt="">
+    </div>
+    <div class="cart__projekt-info">
+        <div class="cart__projekt-icon"><a href=""><i class="icon-arrow-right"></i></a></div>
+        <a href="" class="cart__projekt-name btn-line">Packaging & Distribution</a>
+        <p class="cart__projekt-price">44 000 руб.</p>
+    </div>
+</div>
+
+<div class="swiper-slide cart__projekt">
+    <div class="cart__projekt-img">
+        <img src="images/gallery/2.jpg" alt="">
+    </div>
+    <div class="cart__projekt-info">
+        <div class="cart__projekt-icon"><a href=""><i class="icon-arrow-right"></i></a></div>
+        <a href="" class="cart__projekt-name btn-line">Packaging & Distribution</a>
+        <p class="cart__projekt-price">44 000 руб.</p>
+    </div>
+</div>
+
+<div class="swiper-slide cart__projekt">
+    <div class="cart__projekt-img">
+        <img src="images/gallery/4.jpg" alt="">
+    </div>
+    <div class="cart__projekt-info">
+        <div class="cart__projekt-icon"><a href=""><i class="icon-arrow-right"></i></a></div>
+        <a href="" class="cart__projekt-name btn-line">Packaging & Distribution</a>
+        <p class="cart__projekt-price">44 000 руб.</p>
+    </div>
+</div>
+
+<div class="swiper-slide cart__projekt">
+    <div class="cart__projekt-img">
+        <img src="images/gallery/4.jpg" alt="">
+    </div>
+    <div class="cart__projekt-info">
+        <div class="cart__projekt-icon"><a href=""><i class="icon-arrow-right"></i></a></div>
+        <a href="" class="cart__projekt-name btn-line">Packaging & Distribution</a>
+        <p class="cart__projekt-price">44 000 руб.</p>
+    </div>
+</div> 
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<section class="homeserv">
+    <div class="home-title-wrapper container">
+    <h3 class="home-title">Услуги</h3>
+    <p class="home-desc">Specialist logistics services</p>
+    </div>
+    <div class="swiper homeserv__content container">
+            <div class="swiper-wrapper homeserv__content-wrapper">
+                <div class="swiper-slide cart__service">
+    <div class="cart__service-img">
+        <img src="images/news/bi.jpg" alt="">
+    </div>
+    <div class="cart__service-info">
+        <div class="cart__service-icon"><i class="icon-cogs"></i></div>
+        <a href="single-service.html" class="cart__service-title">Air Freight</a>
+        <p class="cart__service-desc">Molestie malesuada. Praesent sapien massa, convallis</p>
+        <p class="cart__service-price">20000руб</p>
+        <a href="single-service.html" class="cart__service-btn btn-line">Подробнее</a>
+    </div>
+</div>
+
+<div class="swiper-slide cart__service">
+    <div class="cart__service-img">
+        <img src="images/news/big.jpg" alt="">
+    </div>
+    <div class="cart__service-info">
+        <div class="cart__service-icon"><i class="icon-cogs"></i></div>
+        <a href="" class="cart__service-title">Air Freight</a>
+        <p class="cart__service-desc">Molestie malesuada. Praesent sapien massa, convallis</p>
+        <p class="cart__service-price">20000руб</p>
+        <a href="" class="cart__service-btn btn-line">Подробнее</a>
+    </div>
+</div>
+
+<div class="swiper-slide cart__service">
+    <div class="cart__service-img">
+        <img src="images/news/arenda.jpg" alt="">
+    </div>
+    <div class="cart__service-info">
+        <div class="cart__service-icon"><i class="icon-cogs"></i></div>
+        <a href="" class="cart__service-title">Air Freight</a>
+        <p class="cart__service-desc">Molestie malesuada. Praesent sapien massa, convallis</p>
+        <p class="cart__service-price">20000руб</p>
+        <a href="" class="cart__service-btn btn-line">Подробнее</a>
+    </div>
+</div>
+
+
+<div class="swiper-slide cart__service">
+    <div class="cart__service-img">
+        <img src="images/news/bi.jpg" alt="">
+    </div>
+    <div class="cart__service-info">
+        <div class="cart__service-icon"><i class="icon-cogs"></i></div>
+        <a href="" class="cart__service-title">Air Freight</a>
+        <p class="cart__service-desc">Molestie malesuada. Praesent sapien massa, convallis</p>
+        <p class="cart__service-price">20000руб</p>
+        <a href="" class="cart__service-btn btn-line">Подробнее</a>
+    </div>
+</div>
+
+<div class="swiper-slide cart__service">
+    <div class="cart__service-img">
+        <img src="images/news/bi.jpg" alt="">
+    </div>
+    <div class="cart__service-info">
+        <div class="cart__service-icon"><i class="icon-cogs"></i></div>
+        <a href="" class="cart__service-title">Air Freight</a>
+        <p class="cart__service-desc">Molestie malesuada. Praesent sapien massa, convallis</p>
+        <p class="cart__service-price">20000руб</p>
+        <a href="" class="cart__service-btn btn-line">Подробнее</a>
+    </div>
+</div>
+
+ 
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<section class="hometesti">
+    <div class="hometesti__content container">
+        <div class="hometesti__left">
+            <img src="images/news/arenda.jpg" alt="">
+        </div>
+        <div class="hometesti__right">
+            <div class="home-title-wrapper">
+                <h3 class="home-title">Отзывы</h3>
+                <p class="home-desc">Specialist logistics services</p>
+                </div>
+            <div class="swiper hometesti__slider">
+                <div class="swiper-wrapper hometesti__slider-wrapp">
+                    <div class="swiper-slide cart__reviews cart__shadow">
+    <div class="cart__reviews-content">
+        <div class="cart__reviews-img">
+            <img src="images/reviews/naz.jpg" alt="">
+        </div>
+    <div class="cart__reviews-text">
+        <p class="cart__reviews-name">Андрей</p>
+        <p class="cart__reviews-job">Уборка территории</p>
+        <p class="cart__reviews-date">24.05.2024</p>
+        <p class="cart__reviews-reviews">Мирспецтехника - отличная компания, которая предоставляет широкий ассортимент строительной спецтехники в аренду. Я обратился к ним для аренды экскаватора на строительной площадке и был приятно удивлен качеством обслуживания и состоянием техники.</p>
+    </div>
+    </div>
+</div>
+
+<div class="swiper-slide cart__reviews cart__shadow">
+    <div class="cart__reviews-content">
+        <div class="cart__reviews-img">
+            <img src="images/reviews/22.jpg" alt="">
+        </div>
+    <div class="cart__reviews-text">
+        <p class="cart__reviews-name">Андрей</p>
+        <p class="cart__reviews-job">Уборка территории</p>
+        <p class="cart__reviews-date">24.05.2024</p>
+        <p class="cart__reviews-reviews">Мирспецтехника - отличная компания, которая предоставляет широкий ассортимент строительной спецтехники в аренду. Я обратился к ним для аренды</p>
+    </div>
+    </div>
+</div>
+
+<div class="swiper-slide cart__reviews cart__shadow"> 
+    <div class="cart__reviews-content">
+        <div class="cart__reviews-img">
+            <img src="images/reviews/88.jpg" alt="">
+        </div>
+    <div class="cart__reviews-text">
+        <p class="cart__reviews-name">Андрей</p>
+        <p class="cart__reviews-job">Уборка территории</p>
+        <p class="cart__reviews-date">24.05.2024</p>
+        <p class="cart__reviews-reviews">Мирспецтехника - отличная компания, которая предоставляет широкий ассортимент строительной спецтехники в аренду. Я обратился к ним для аренды экскаватора на строительной площадке и был приятно удивлен качеством обслуживания и состоянием техники.</p>
+    </div>
+    </div>
+</div>
+
+<div class="swiper-slide cart__reviews cart__shadow">
+    <div class="cart__reviews-content">
+        <div class="cart__reviews-img">
+            <img src="images/reviews/88.jpg" alt="">
+        </div>
+    <div class="cart__reviews-text">
+        <p class="cart__reviews-name">Андрей</p>
+        <p class="cart__reviews-job">Уборка территории</p>
+        <p class="cart__reviews-date">24.05.2024</p>
+        <p class="cart__reviews-reviews">Мирспецтехника - отличная компания, которая предоставляет широкий ассортимент строительной спецтехники в аренду. Я обратился к ним для аренды экскаватора на строительной площадке и был приятно удивлен качеством обслуживания и состоянием техники.</p>
+    </div>
+    </div>
+</div> 
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+    <div class="home-title-wrapper container">
+    <h4 class="home-title">Вопросы</h4>
+    <p class="home-desc">Continually productize compelling quality for packed in business consulting elated productize</p>
+    </div>
+    <div class="faq__content container">
+        <div class="faq__item">
+            
+            <div class="faq__title">Вопросы 1</div>
+       
+           <div class="faq__otvet">
+            <p>Ответ 1</p>
+          </div>
+        </div>
+        <div class="faq__item">
+            
+            <div class="faq__title">Вопросы 2</div>
+     
+           <div class="faq__otvet">
+            <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно. К счастью сегодня нет недостатка в автомойках, где вашей машине быстро и сравнительно недорого вернут прежний вид, сделав ее чистой и сверкающей.</p>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="homenews">
+    <div class="home-title-wrapper">
+    <h3 class="home-title">Новости</h3>
+    <p class="home-desc">Specialist logistics services</p>
+    </div>
+    <div class="swiper homenews__content container">
+            <div class="swiper-wrapper homenews__content-wrapper">
+                <div class="swiper-slide cart__news cart__shadow">
+    <div class="cart__news-img">
+        <img src="images/news/bi.jpg" alt="">
+    </div>
+    <div class="cart__news-date">
+        <p class="cart__news-date-day">25</p>
+        <p class="cart__news-date-mon">mar</p>
+    </div>
+    <div class="cart__news-info">
+        <div class="cart__news-admin">
+            <span><i class="icon-user-alt"></i>Админ</span>
+            <span class="cart__news-comment"><i class="icon-comments"></i>Комментарии</span>
+        </div>
+        <a class="cart__news-title btn-line" href="">Book your entry with us be Associated worldwide</a>
+        <p class="cart__news-desc">Book your entry with us be Associated worldwide Book your entry with us be Associated worldwide</p>
+        <a class="cart__news-link btn-line" href="news-single.html">Читать далее</a>
+    </div>
+</div>
+
+<div class="swiper-slide cart__news cart__shadow">
+    <div class="cart__news-img">
+        <img src="images/news/raz.jpg" alt="">
+    </div>
+    <div class="cart__news-date">
+        <p class="cart__news-date-day">25</p>
+        <p class="cart__news-date-mon">mar</p>
+    </div>
+    <div class="cart__news-info">
+        <div class="cart__news-admin">
+            <span><i class="icon-user-alt"></i>Админ</span>
+            <span class="cart__news-comment"><i class="icon-comments"></i>Комментарии</span>
+        </div>
+        <a class="cart__news-title btn-line" href="">Book your entry with us be Associated worldwide</a>
+        <p class="cart__news-desc">Book your entry with us be Associated worldwide Book your entry with us be Associated worldwideBook your entry with us be Associated worldwide </p>
+        <a class="cart__news-link btn-line" href="">Читать далее</a>
+    </div>
+</div>
+
+<div class="swiper-slide cart__news cart__shadow">
+    <div class="cart__news-img">
+        <img src="images/news/big.jpg" alt="">
+    </div>
+    <div class="cart__news-date">
+        <p class="cart__news-date-day">25</p>
+        <p class="cart__news-date-mon">mar</p>
+    </div>
+    <div class="cart__news-info">
+        <div class="cart__news-admin">
+            <span><i class="icon-user-alt"></i>Админ</span>
+            <span class="cart__news-comment"><i class="icon-comments"></i>Комментарии</span>
+        </div>
+        <a class="cart__news-title btn-line" href="">Book your entry with us be Associated worldwide Book your entry with us </a>
+        <p class="cart__news-desc">Book your entry with us be Associated worldwide Book your entry with us be Associated worldwide</p>
+        <a class="cart__news-link btn-line" href="">Читать далее</a>
+    </div>
+</div>
+
+<div class="swiper-slide cart__news cart__shadow">
+    <div class="cart__news-img">
+        <img src="images/news/big.jpg" alt="">
+    </div>
+    <div class="cart__news-date">
+        <p class="cart__news-date-day">25</p>
+        <p class="cart__news-date-mon">mar</p>
+    </div>
+    <div class="cart__news-info">
+        <div class="cart__news-admin">
+            <span><i class="icon-user-alt"></i>Админ</span>
+            <span class="cart__news-comment"><i class="icon-comments"></i>Комментарии</span>
+        </div>
+        <a class="cart__news-title btn-line" href="">Book your entry with us be Associated worldwide Book your entry with us </a>
+        <p class="cart__news-desc">Book your entry with us be Associated worldwide Book your entry with us be Associated worldwide</p>
+        <a class="cart__news-link btn-line" href="">Читать далее</a>
+    </div>
+</div>
+
+<div class="swiper-slide cart__news cart__shadow">
+    <div class="cart__news-img">
+        <img src="images/news/big.jpg" alt="">
+    </div>
+    <div class="cart__news-date">
+        <p class="cart__news-date-day">25</p>
+        <p class="cart__news-date-mon">mar</p>
+    </div>
+    <div class="cart__news-info">
+        <div class="cart__news-admin">
+            <span><i class="icon-user-alt"></i>Админ</span>
+            <span class="cart__news-comment"><i class="icon-comments"></i>Комментарии</span>
+        </div>
+        <a class="cart__news-title btn-line" href="">Book your entry with us be Associated worldwide Book your entry with us </a>
+        <p class="cart__news-desc">Book your entry with us be Associated worldwide Book your entry with us be Associated worldwide</p>
+        <a class="cart__news-link btn-line" href="">Читать далее</a>
+    </div>
+</div> 
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<section class="logo">
+    <div class="swiper logo__content container">
+        <div class="swiper-wrapper logo__content-wrapper">
+                <div class="swiper-slide logo__item">
+                    <img src="images/logo/01.jpg" alt="">
+                </div>
+                <div class="swiper-slide logo__item">
+                    <img src="images/logo/02.jpg" alt="">
+                </div>
+                <div class="swiper-slide logo__item">
+                    <img src="images/logo/04.jpg" alt="">
+                </div>
+      
+                <div class="swiper-slide logo__item">
+                    <img src="images/logo/05.jpg" alt="">
+                </div>
+                <div class="swiper-slide logo__item">
+                    <img src="images/logo/06.jpg" alt="">
+                </div>
+                <div class="swiper-slide logo__item">
+                    <img src="images/logo/07.jpg" alt="">
+                </div>
+                <div class="swiper-slide logo__item">
+                    <img src="images/logo/08.jpg" alt="">
+                </div>
+                <div class="swiper-slide logo__item">
+                    <img src="images/logo/09.jpg" alt="">
+                </div>
+                <div class="swiper-slide logo__item">
+                    <img src="images/logo/10.jpg" alt="">
+                </div>
+        </div>
+    </div>
+</section>
+   </div>
+   <footer class="footer">
+    <div class="footer__content container">
+        <div class="footer__content-contact">
+            <h5 class="footer__title">Контакты</h5>
+            <ul class="footer__contact-list">
+                <li><i class="icon-envelope"></i><a href="">mail@mail.ru</a></li>
+                <li><i class="icon-phone-alt"></i><a href="">8(888)999-77-77</a></li>
+                <li><i class="icon-map-marker-alt"></i>Республика Татарстан, г. Казань ул. Шмидта, 35, оф. 103, инд. 420097 </li>
+                <li><i class="icon-clock"></i>с 08:00 до 18:00 МСК.</li>
+            </ul>
+        </div>
+        <div class="footer__content-menu">
+            <h5 class="footer__title">Страницы</h5>
+            <ul class="footer__menu-list">
+                <li><i class="icon-angle-double-right"></i><a href="vakansi.html">Вакансии</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="404.html">Фотогалерея</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="proekty.html">Проекты</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="reviews.html">Отзывы</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="contacty.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer__content-menu">
+            <h5 class="footer__title">Услуги</h5>
+            <ul class="footer__menu-list">
+                <li><i class="icon-angle-double-right"></i><a href="vakansi.html">Вакансии</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="404.html">Фотогалерея</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="proekty.html">Проекты</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="reviews.html">Отзывы</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="contacty.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer__content-desc">
+            <p>Компания ООО "ЭНЕРГОСТРОЙЗАЩИТА" осуществляет огнезащитную обработку металлоконструкций в г. Казань, Республике Татарстан и других регионам РФ по ценам ниже рынка до 30%.</p>
+        </div>
+    </div>
+    <div class="footer__copy">
+        2024  
+    </div>
+    <div class="footer__button-up">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+
+</footer>
+ 
+<script src="js/jQuery.min.js?_v=20240805103424"></script>
+<script src="js/scripts.min.js?_v=20240805103424"></script>
+<script src="js/lib.min.js?_v=20240805103424"></script>
+</div>
+</body>
+</html>

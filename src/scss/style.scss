@@ -1,0 +1,94 @@
+@import "node_modules/swiper/swiper.scss";
+@import "node_modules/swiper/modules/navigation.scss";
+@import "node_modules/swiper/modules/effect-fade.scss";
+@import "node_modules/swiper/modules/thumbs.scss";
+@import "base/null.scss";
+@import "base/mixin";
+@import "fonts";
+
+:root {
+   --ColorBlue: #0162ca;
+   --ColorDarkBlue: #050f2d;
+   --ColorWhite: #ffffff;
+   --ColorBorder: #dddddd;
+   --ColorWidget: #F3F3F3;
+   --ColorText: #363739;
+   --ColorBlack: #000000;
+   --ColorFooter: #121212;
+   --ColorHoverButton: rgb(26, 5, 105);
+   --space: 40px;
+   --space2: 10px;
+  
+}
+
+$minWidth: 320;
+$maxWidthContainer: 1590;
+$padding: 15;
+
+$ColorBlue: var(--ColorBlue);
+$ColorDarkBlue: var(--ColorDarkBlue);
+$ColorWhite: var(--ColorWhite);
+$ColorText: var(--ColorText);
+$ColorBlack: var(--ColorBlack);
+$ColorFooter: var(--ColorFooter);
+$ColorHoverButton: var(--ColorHoverButton);
+$ColorBorder: var(--ColorBorder);
+$ColorWidget: var(--ColorWidget);
+
+.container {
+   max-width: #{$maxWidthContainer}px;
+   padding: 0 #{$padding}px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   overflow-x: hidden;
+   z-index: 1;
+}
+.content-wrapper {
+   flex-grow: 1;
+   margin: 78px 0 50px 0;
+   max-width: 100%;
+   height: 100%;
+   overflow: hidden;
+  z-index: 1;
+}
+
+footer {
+   margin-top: auto;
+}
+body {
+   color: $ColorText;
+   background-color: #ffffff;
+}
+
+
+
+@import "./wp/wpstyle.scss";
+@import "cursor";
+@import "preloader";
+@import "settings";
+@import "anim";
+@import "btn";
+@import "header";
+@import "home";
+@import "headpanel";
+@import "page";
+@import "archive";
+@import "single";
+@import "cart/cart-news.scss";
+@import "cart/cart-reviews";
+@import "cart/cart-vakansii";
+@import "cart/cart-service";
+@import "cart/cart-projekt";
+@import "cart/cart-catalog";
+@import "sidebar";
+@import "form";
+@import "header";
+@import "footer";
+
+

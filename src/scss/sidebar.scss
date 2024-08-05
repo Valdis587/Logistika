@@ -1,0 +1,168 @@
+.sidebar {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    &__widget-wrapper, .widget_archive ul, .widget_categories ul {
+        padding: 20px 10px;
+        .cart__reviews-img {
+          display: block;
+        }
+    }
+
+    &__widget {
+        background-color: $ColorWidget;
+        border-radius: 5px;
+    }
+    &__title {
+        position: relative;
+  font-size: 22px;
+  font-weight: 600;;
+  line-height: 110%;
+  padding: 15px 10px;
+  overflow: hidden;
+  &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        margin: 0;
+        background-color: $ColorBorder
+    }
+
+    &:after {
+        animation: sectionShape 8s linear infinite;
+        animation-delay: 0s;
+        background-color: $ColorBlue;
+        z-index: 9;
+        width: 79px;
+        height: 2px;
+    }
+    }
+ 
+    &__line {
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 2px;
+        overflow: hidden;
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: auto;
+            margin-top: -3px;
+            overflow: hidden;
+        }
+
+        &:before {
+            animation: sectionShape 8s linear infinite;
+            animation-delay: 0s;
+            background-color: $ColorBlue;
+            z-index: 9;
+            width: 79px;
+            height: 4px;
+            border-radius: 30px;
+        }
+
+        &:after {
+            width: 100%;
+            height: 2px;
+            margin: 0;
+            margin-top: -1px;
+            background-color: $ColorBorder;
+            left: 0;
+        }
+    }
+
+    &__searchform {
+        display: grid;
+        grid-template-columns: auto 40px;
+        align-items: center;
+      }
+      &__searchform-input {
+        border: 1px solid $ColorBorder;
+        border-radius: 3px;
+        padding: 10px 5px;
+      }
+      &__searchform-button {
+        background-color: $ColorBlue;
+        color: $ColorWhite;
+        padding: 11px;
+        border-radius: 3px;
+        transition: 0.3s all ease 0.3s;
+      }
+      &__searchform-button:hover {
+        background-color: $ColorDarkBlue;
+      }
+      &__category-list, &__news-list, .widget_archive ul, .widget_categories ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      .widget_archive ul, .widget_categories ul {
+        a:hover {
+          color: $ColorBlue;
+        }
+      }
+      &__category-item, &__news-item {
+        border-bottom: 1px solid $ColorBorder;
+        border-radius: 3px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 0;
+        img {
+          width: 70px;
+          height: 50px;
+          border-radius: 3px;
+          transition: 0.3s all ease 0.3s;
+         
+        }
+        
+        img:hover {
+          border-color: 1px solid $ColorBlue;
+        }
+        a:hover {
+          color: $ColorBlue;
+        }
+      }
+      & .cart__vakan-content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px auto;
+        gap: 5px;
+        align-items: center;
+        img {
+         height: 150px;
+        }
+       }
+       & .cart__vakan-text {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         text-align: center;
+       }
+         .cart__vakan-desc {
+           display: none;
+         }
+         &__button-wrapp {
+          text-align: center;
+          margin: 20px 0;
+        }
+        &__link {
+          margin: 5px 0;
+        }
+        .cart__reviews {
+          background-color: $ColorWidget;
+        }
+}

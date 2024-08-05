@@ -1,0 +1,99 @@
+.header {
+   position: fixed;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: 2000;
+   &__top-line {
+      background-color: $ColorBlue;
+      color: $ColorWhite;
+   }
+   &__top-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      padding: 10px 5px;
+   }
+   &__top-left {
+      display: flex;
+      justify-content: space-between;
+      gap: 5px 20px;
+      align-items: center;
+      @media(max-width: 380px) {
+         flex-direction: column;
+         text-align: center;
+         width: 100%;
+      }
+      i {
+         margin: 0 5px 0 0;
+      }
+   }
+   &__top-right {
+      @media(max-width: 550px) {
+         display: none;
+      }
+   }
+   &__bottom-line {
+     background-color: $ColorDarkBlue;
+     @media(max-width: 600px) {
+      background-color: $ColorWhite;
+     }
+   }
+   &__bottom-content {
+      display: grid;
+      grid-template-columns: 300px auto 200px;
+      gap: 5px;
+      align-items: center;
+      min-height: 70px;
+      @media(max-width: 600px) {
+       grid-template-columns: 100%;
+      }
+   }
+   &__bottom-logo {
+      background-color: $ColorWhite;
+      height: 70px;
+      position: relative;
+      @media(max-width: 600px) {
+         height: auto;
+        }
+      img {
+         padding: 5px 0 0 0;
+      }
+   }
+   &__bottom-logo::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      width: 0;
+      height: 0;
+      border-bottom: 70px solid $ColorWhite;
+      right: -23px;
+      border-right: 23px solid transparent;
+      @media(max-width: 600px) {
+         display: none;
+        }
+   }
+   &__bottom-logo::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      width: 0;
+      height: 0;
+      border-bottom: 70px solid $ColorDarkBlue;
+      left: 0px;
+      border-right: 20px solid transparent;
+      @media(max-width: 600px) {
+         display: none;
+        }
+   }
+   &__bottom-logo, &__bottom-right, &__bottom-center {
+      text-align: center;
+      padding: 5px 10px;
+   
+   }
+}
+
+@import "menu";

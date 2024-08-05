@@ -1,0 +1,140 @@
+.btn-blue {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 15px 25px;
+    border-radius: 4px;
+    background-color: $ColorBlue;
+    color: $ColorWhite;
+    --tilt: 40px;
+    &:before,
+    &:after {
+        content: "";
+        z-index: -1;
+        width: calc(100% + var(--tilt));
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: calc(-100% - var(--tilt));
+        background: $ColorHoverButton;
+       
+        clip-path: polygon(
+        0 0,
+        calc(100% - var(--tilt)) 0,
+        100% 50%,
+        calc(100% - var(--tilt)) 100%,
+        0 100%
+        );
+        transition: transform 0.6s;
+    }
+    &:before {
+        left: calc(-100% - var(--tilt));
+    }
+    &:after {
+        left: 100%;
+        transform: rotate(180deg);
+    }
+    &:hover,
+    &.active {
+        color: $ColorWhite;
+        &:before {
+            transform: translateX(100%);
+        }
+        &:after {
+            transform: rotate(180deg) translateX(100%);
+        }
+    }
+}
+
+.btn-line {
+  font-weight: 500;
+  display: inline-block;
+  line-height: 110%;
+  position: relative;
+  padding-bottom: 0px;
+  margin-bottom: -1px;
+  width: fit-content;
+  margin: 5px auto;
+  padding: 5px 0;
+  transition: all 0.3s ease-in-out; 
+  &:hover {
+    color: $ColorBlue;
+
+    &::before {
+        width: 100%;
+        background-color: $ColorBlue;
+    }
+}
+}
+.btn-line::before {
+    content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: $ColorDarkBlue;
+  transition: all ease 0.3s;
+}
+
+.btn-dark {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 15px 25px;
+    border-radius: 4px;
+    background-color: $ColorDarkBlue;
+    color: $ColorWhite;
+    --tilt: 40px;
+    &:before,
+    &:after {
+        content: "";
+        z-index: -1;
+        width: calc(100% + var(--tilt));
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: calc(-100% - var(--tilt));
+        background: $ColorBlue;
+       
+        clip-path: polygon(
+        0 0,
+        calc(100% - var(--tilt)) 0,
+        100% 50%,
+        calc(100% - var(--tilt)) 100%,
+        0 100%
+        );
+        transition: transform 0.6s;
+    }
+    &:before {
+        left: calc(-100% - var(--tilt));
+    }
+    &:after {
+        left: 100%;
+        transform: rotate(180deg);
+    }
+    &:hover,
+    &.active {
+        color: $ColorWhite;
+        &:before {
+            transform: translateX(100%);
+        }
+        &:after {
+            transform: rotate(180deg) translateX(100%);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+contact form 7
+
+<div class="form-site">
+[text* text-439 class:form-site__input-name placeholder "Ваше имя"]
+[mask* mask-200 class:form-site__input-tel "+7(___) ___-__-__"]
+[acceptance agreement id:agreement class:form-site__check] Я даю согласие на обработку моих данных! [/acceptance] 
+[submit class:form-site__button class:btn-blue "Отправить"]
+</div>
+
+
+mega menu 
+
+Адаптивный брейкпойнт 1050px
+
+Отключить панель переключения мобильных устройств

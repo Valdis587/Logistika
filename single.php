@@ -9,11 +9,8 @@
 
 get_header();
 get_template_part( 'template-parts/content', 'head' );
+do_action( 'start_wrapper_single_sidebar_right' ); 
 ?>
-
-<div class="archive container">
-    <div class="archive__sidebar-right">
-        <div class="archive__content cart">
             <div class="cart__news-single">
 			<?php
 		while ( have_posts() ) :
@@ -42,9 +39,5 @@ get_template_part( 'template-parts/content', 'head' );
 		endwhile; // End of the loop.
 		?>
             </div>
-        </div>
-        <?php get_sidebar(); ?>
-    </div>
-</div>
-<?php
+<?php do_action( 'end_wrapper_single_sidebar_right' );
 get_footer();

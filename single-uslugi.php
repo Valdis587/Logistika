@@ -10,10 +10,8 @@ global $logistika;
 $value = redux_post_meta( 'logistika', 'uslugi' );
 get_header();
 get_template_part( 'template-parts/content', 'head' );
+do_action( 'start_wrapper_single_sidebar_right' ); 
 ?>
-<div class="archive container">
-    <div class="archive__sidebar-right">
-            <div class="archive__cart-row single">
                 <div class="single__top">
                 <?php if(!$value['uslugi-gallery-on']) { ?>
                 <div class="single__img-thumb">
@@ -93,9 +91,5 @@ get_template_part( 'template-parts/content', 'head' );
                     </table>
                 </div>
                 <?php } ?>
-            </div> 
-        <?php get_sidebar(); ?>
-    </div>
-</div>
-<?php
+<?php do_action( 'end_wrapper_single_sidebar_right' );
 get_footer();

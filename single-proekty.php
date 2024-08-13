@@ -10,10 +10,8 @@ global $logistika;
 $value = redux_post_meta( 'logistika', 'proekty' );
 get_header();
 get_template_part( 'template-parts/content', 'head' );
+do_action( 'start_wrapper_single_sidebar_right' ); 
 ?>
-<div class="archive container">
-    <div class="archive__sidebar-right">
-            <div class="archive__cart-row single">
                 <div class="single__top">
                 <?php if(!$value['proekty-gallery-on']) { ?>
                 <div class="single__img-thumb">
@@ -70,9 +68,5 @@ get_template_part( 'template-parts/content', 'head' );
                 <div class="single__buttom-text">
                 <?php the_content(); ?>
                 </div>
-            </div> 
-            <?php get_sidebar(); ?>
-    </div>
-</div>
-<?php
+<?php do_action( 'end_wrapper_single_sidebar_right' );
 get_footer();

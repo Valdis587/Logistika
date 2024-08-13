@@ -42,6 +42,8 @@ require get_template_directory() . '/includes/functions/cat-images.php';
 
 require get_template_directory() . '/includes/functions/zak.php';
 
+require get_template_directory() . '/includes/functions/hoock.php';
+
 require get_template_directory() . '/widget/category.php';
 
 require get_template_directory() . '/widget/model.php';

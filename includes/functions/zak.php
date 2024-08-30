@@ -31,16 +31,9 @@ $id = get_post_thumbnail_id();
     $main=wp_get_attachment_image_src( $id, 'blog' ); 
     ?>  
 
-<h6 class="popup-zak__title">Заказать <?php the_title(''); ?></h6>
-                <div class="popup-zak__content-form">
-                <div class="popup-zak__left">          
+<h6 class="popup-zak__title">Заказать <?php the_title(''); ?></h6>     
                 <div class="popup-zak__img">
                 <img src="<?php echo $main[0]; ?>" alt="<?php the_title(''); ?>">
-                </div>
-            </div>
-            <div class="popup-zak__right">
-            <?php if($logistika['popup-short-form']) {  echo do_shortcode($logistika['popup-short-form']); } ?>
-            </div>
     <?php
 	endwhile;
  
